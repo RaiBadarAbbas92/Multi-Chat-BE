@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+sentence-transformers
+chromadb
+openai
+PyPDF2
+python-multipart
+sqlalchemy
+alembic
+bcrypt
+PyJWT
+pytest

@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "multi-chat-be"
+version = "0.1.0"
+description = ""
+authors = ["Badar Abbas <raibadar37218@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyjwt = {extras = ["crypto"], version = "^2.10.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+sqlalchemy = {version = ">=1.4,<2.0.36", allow-prereleases = true}
+fastapi = "^0.115.5"
+langchain = "^0.3.7"
+sqlmodel = "^0.0.22"
+aiosqlite = "^0.20.0"
+pydantic = {extras = ["email"], version = "^2.9.2"}
+pycryptodome = "^3.21.0"
+psycopg2 = "^2.9.10"
+langchain-community = {version = "0.3.7", allow-prereleases = true}
+uvicorn = "^0.32.0"
+sentence-transformers = "^3.3.1"
+llm = "^0.18"
+langchain-openai = "^0.2.9"
+langchain-huggingface = "^0.1.2"
+langchain-chroma = "^0.1.4"
+requests = "^2.32.3"
+urllib3 = "^2.2.3"
+
+[tool.poetry.scripts]
+dev= "multi_chat_be.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
